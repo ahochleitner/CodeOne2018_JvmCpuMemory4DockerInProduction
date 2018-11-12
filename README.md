@@ -19,3 +19,6 @@ run MemoryInfo in Java Container (7 .. 11)
    ./12_runAllMemoryInfo.sh -setMemory1024m
    ./12_runAllMemoryInfo.sh -setCGroupMemoryLimitForHeap
 
+
+docker run --rm -it -v "$PWD":/usr/src/myapp -w /usr/src/myapp openjdk:8 bash ./run.sh MemEat
+docker run --rm -it -v "$PWD":/usr/src/myapp -w /usr/src/myapp openjdk:10 bash ./run.sh MemEat
