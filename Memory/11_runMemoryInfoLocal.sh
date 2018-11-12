@@ -20,6 +20,11 @@ fi
 echo "JAVA8 ........................."
 $JAVA8_HOME/bin/javac MemoryInfo.java 
 $JAVA8_HOME/bin/java $ADDITIONAL_PARAMS $ADDITIONAL_PARAMS2 MemoryInfo
+
+echo "JAVA9 ........................."
+$JAVA9_HOME/bin/javac MemoryInfo.java 
+$JAVA9_HOME/bin/java $ADDITIONAL_PARAMS $ADDITIONAL_PARAMS2 MemoryInfo
+
 echo "JAVA10 ........................."
 $JAVA10_HOME/bin/javac MemoryInfo.java 
 $JAVA10_HOME/bin/java $ADDITIONAL_PARAMS $ADDITIONAL_PARAMS2 MemoryInfo
