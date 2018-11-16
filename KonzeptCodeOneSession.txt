@@ -1,0 +1,49 @@
+MEMORY
+===========
+11-MemoryInfo.java    lokal JDK8/JDK10
+...................
+
+12-runAllMemoryInfo.sh     7..10     docker
+...................
+             + .m 1024m
+             + -XX:+UnlockExcpt -XX:+CGroupMemLimit
+
+13-MemEat.java       lokal   JDK8/JDK10
+...................
+             docker jdk8   bash ./run.sh   MemEat
+                       10
+
+             docker jdk8 bash ./run.sh MemEat
+                       10
+                    +  --memory-swappiness
+
+                    +  -XX:UnlockException  .XX;+CGroupMemLimit
+
+14-Memory-Consumer       runMemoryConsumer.sh     local
+...................
+             docker jdk8 bash ./runMemoryConsumer.sh
+                       10    oder gleich
+
+                    -m 1024m
+                    --memory-swappiness
+                    -XX:+UnlockExcp  -XX:+CGroupMemLimit
+ 
+
+CPU
+===========
+
+
+
+THREADS
+===========
+
+
+
+
+
+K8S
+===========
+
+
+
+
