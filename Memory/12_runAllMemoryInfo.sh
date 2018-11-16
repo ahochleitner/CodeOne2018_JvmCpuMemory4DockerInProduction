@@ -1,7 +1,7 @@
 #!/bin/bash
 
 MAIN=MemoryInfo
-#MAIN=Main
+#MAIN=PrintMemoryInfo
 
 if [ "$#" = "1" -a "$1" = "-usage" ]; then
   echo "run Java7 ... Java11-Docker with MemoryInfo inside"
