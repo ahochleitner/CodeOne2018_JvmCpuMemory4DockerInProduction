@@ -58,6 +58,14 @@ THREADS
 
 K8S
 ===========
+                snx & shuttle aufbauen, watch kubectl
+
+                 jdk8
+                 20/20
+              kubectl create -f
+
+              kubectl exec memory-consumer    jps
+              kubectl exec memory-consumer /opt/local/listThreads.sh   7
 
 
 
