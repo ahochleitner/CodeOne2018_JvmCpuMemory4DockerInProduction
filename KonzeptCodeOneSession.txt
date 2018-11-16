@@ -31,15 +31,30 @@ MEMORY
 
 CPU
 ===========
-
+                 CpuInfo.java
+                 runAllCpuInfo.sh    7 8 9 10
+                                        + --cpus .5   CGroup wirkungslos!!!
+                 CpuBench.java
+                 runAllCpuBenchmark.sh   7 8 9 10
+                      + -cpus .5
+                      + --cpus .5  --cpuset-cpus 1
 
 
 THREADS
 ===========
+                HelloWorld.java
+                      2000
+                      200000     jps, ps / pstree lokal
+                + jconsole
 
+                showJavaThreadInfo.sh   --I
+                showThreads,sh          --I
+                showThreadsCount.sh     --I
 
-
-
+                docker .... 8 --name jdk       / docker exec jdk  ./runAllThreadInfo.sh
+                           10
+                              --cpus 1
+                              --cpus 2
 
 K8S
 ===========
